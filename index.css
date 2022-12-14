@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+.header > h1 {
+    font-size: 2.5rem;
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+.header > p {
+    font-size: 1.5rem;
+}
+
+input {
+    font-size: 1.5rem;
+    padding: 0.5rem 0rem;
+}
+
+button {
+    font-size: 1rem;
+    background-color: red;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: brown;
+}
+
+.answer > p {
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.decorated_text {
+    text-decoration: underline;
+    color: blue;
+}
+
+.example {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.error {
+    display: none;
+    color: red;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+@media screen and (max-device-width:475px) {
+    .background {
+        gap: 1.2rem;
+    }
+
+    .header > h1 {
+        font-size: 2rem;
+        padding: 0rem 0rem 1rem 0rem;
+    }
+
+    .header > p {
+        font-size: 1rem;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    .example {
+        font-size: 0.8rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .example > p {
+        overflow-wrap: break-word;
+        padding: 0rem 2rem;
+    }
+    
+    button {
+        font-size: 0.8rem;
+    }
+}
+

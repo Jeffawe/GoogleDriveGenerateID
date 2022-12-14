@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script type="text/javascript" src="./index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;700&display=swap" rel="stylesheet"></link>
+    <title>Document</title>
+</head>
+<body>
+    <div class="background">
+        <div class="header">
+            <h1>ID Generator</h1>
+            <p>Put a Google Drive Link to generate the ID</p>
+        </div>
+        <div class="example">
+            <p>The blue part is the id</p>
+            <p>https://drive.google.com/file/d/<span class="decorated_text">1qcblgmRedETS9qGSQmCw4knclkpCPX7y</span>/view?usp=share_link</p>
+        </div>
+        <div>
+            <p class="error" id="error">Please add a Valid Google Drive Link</p>
+        </div>
+        <div>
+            <input type="text" id="text" placeholder="Paste a Link..." autocomplete="off"/>
+        </div>
+        
+        <div>
+            <button onclick="Generate()">Generate</button>
+        </div>
+
+        <div class="answer">
+            <p>Your ID is</p>
+            <input type="text" id="answer" autocomplete="off" disabled/>
+        </div>
+
+        <div class="buttons">
+            <button onclick="Copy()">Copy ID</button>
+            <button onclick="Clear()">Clear</button>
+        </div>
+    </div>
+
+</body>
+</html>
